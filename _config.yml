@@ -13,7 +13,7 @@ description: >
   binary security, mobile security, PWN / RE in CTF.
 
 baseurl: ""
-url: "http://blog.tr3e.wang"
+url: "http://m.tr3e.wang"
 github_user: tr3ee
 google_analytics:
 
