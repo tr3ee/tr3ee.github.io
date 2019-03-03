@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+title: Tree's blog
+email: tr3e.wang@gmail.com
+description: >
+  This blog is mainly used to record the learning process,
+  including but not limited to:
+  binary security, mobile security, PWN / RE in CTF.
+
+baseurl: ""
+url: "http://blog.tr3e.wang"
+github_user: tr3ee
+google_analytics:
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Tree"
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Tree"
+      layout: "post"
+
+markdown: kramdown
+
+excerpt_separator: <!-- excerpt -->

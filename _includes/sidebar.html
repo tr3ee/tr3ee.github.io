@@ -1,0 +1,18 @@
+<div class="sidebar">
+  <a href="/" class="logo">
+    <img src="{{ "/img/tree.jpg" | prepend: site.baseurl }}">
+  </a>
+
+  <ul class="nav">
+    <div class="nav-inner">
+      <li><a href="{{ "/" | prepend: site.baseurl }}"><span class="icon doc"></span>archive</a></li>
+      <li><a href="{{ "/about" | prepend: site.baseurl }}"><span class="icon info"></span>about</a></li>
+      <li><a href="https://github.com/tr3ee/tr3ee.github.io"><span class="icon code"></span>project</a></li>
+      <li><a href="{{ "/feed.xml" | prepend: site.url }}"><span class="icon rss"></span>RSS</a></li>
+      {% if site.github_user %}
+      <li><a href="http://github.com/{{ site.github_user }}"><span class="icon github"></span>github</a></li>
+      {% endif %}
+      
+    </div>
+  </ul>
+</div>

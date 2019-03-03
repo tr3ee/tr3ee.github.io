@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html>
+	{% include post-head.html %}
+<body>
+    <div class="">
+        <div class="navbar container">
+            <a id="author-name" class="alignable pull-left" ">{{ page.title }}</a>
+            <ul id="navlist" class="alignable pull-right navbar-ul">
+                        <li class="alignable pull-left nav-list">
+                        	<a href="{{ site.url | append: site.baseurl }}">archive</a>
+                        </li>
+            </ul>
+        </div>
+        <div style="clear:both"></div>
+        <hr />
+            <div class="container content">
+                {{ content }}
+                <hr />
+                <p style="text-align: center; margin-bottom: 10px">
+                	<a style="color: black"><small>last updated{% if page.date %} on {{page.date | date: "%b %d, %y"}}{% endif %} by {{ page.author }}</small></a>
+                </p>
+            </div>
+    </div>
+</body>
+<footer>
+</footer>
+</html>

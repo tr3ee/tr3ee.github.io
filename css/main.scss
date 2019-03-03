@@ -1,0 +1,197 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+html {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.sidebar {
+  padding-top: 20px;
+  position: fixed;
+}
+
+.logo {
+  display: block;
+  max-width: 336px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  margin: 40px 0 0;
+  padding: 0 0 0 48px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.wrapper {
+  padding-right: 20px;
+  position: relative;
+  margin-left: 400px;
+}
+
+.wrapper h1 {
+  margin-top: 0;
+  padding: 50px 0 20px 0;
+  text-transform: lowercase;
+}
+
+body {
+  margin: 0;
+  padding: 0 30px 30px;
+}
+
+a {
+  color: inherit;
+}
+
+/*
+blockquote {
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.5em;
+  margin: 2em 0;
+  padding: 0 1em;
+  border-left: 4px dashed blue;
+}
+*/
+
+video {
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container.skinny {
+  padding-bottom: 43.076923%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  background-size: 100% 100%;
+}
+
+.icon.doc {
+  background-image:url({{ "/img/doc.png" | prepend: site.baseurl }});
+}
+
+.icon.info {
+  background-image:url({{ "/img/info.png" | prepend: site.baseurl }});
+}
+
+.icon.code {
+  background-image:url({{ "/img/code.png" | prepend: site.baseurl }});
+}
+
+.icon.link {
+  background-image:url({{ "/img/link.png" | prepend: site.baseurl }});
+}
+
+.icon.rss {
+  background-image:url({{ "/img/rss.png" | prepend: site.baseurl }});
+}
+
+.icon.github {
+  background-image:url({{ "/img/github.png" | prepend: site.baseurl }});
+}
+
+.nav a {
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: block;
+  float: left;
+  height: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 57.25rem) {
+  .sidebar {
+    position: static;
+    margin: auto;
+    max-width: 21rem;
+  }
+
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 29rem;
+  }
+
+  .wrapper h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: 3rem;
+  }
+
+  .nav {
+    padding-top: 0.3em;
+    height: 4rem;
+    text-align: center;
+  }
+
+  .nav a {
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .nav li {
+    display: inline-block;
+    font-size: 0.7em;
+  }
+
+  .logo img {
+    display: block;
+    max-width: 100%;
+    margin: 4rem auto 0;
+  }
+}
+
+@media screen and (max-width: 33.125rem) {
+  .logo img {
+    max-width: 60%;
+  }
+}
