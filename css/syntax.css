@@ -2,6 +2,8 @@ pre[class="highlight"] {
   border-left: 2px solid #666666;
   background: white;
   padding-left: 1.5%;
+  padding-right: 1.5%;
+  overflow-x: auto;
 }
 
 .highlight table td { padding: 5px; }
